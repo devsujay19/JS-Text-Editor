@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Text Editor using JavaScript</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="options">
+            <button title="Bold" id="bold" class="option-button format">
+                <i title="Bold" class="fa-solid fa-bold"></i>
+            </button>
+            <button title="Superscript Text" id="superscript" class="option-button script">
+                <i title="Superscript Text" class="fa-solid fa-superscript"></i>
+            </button>
+            <button title="Subscript Text" id="subscript" class="option-button script">
+                <i class="fa-solid fa-subscript"></i>
+            </button>
+
+            <button title="Start a List : Ordered List" id="insertOrderedList" class="option-button">
+                <div class="fa-solid fa-list-ol"></div>
+            </button>
+            <button title="Start a List : Unordered List" id="insertUnorderedList" class="option-button">
+                <i class="fa-solid fa-list"></i>
+            </button>
+
+            <button title="Undo" id="undo" class="option-button">
+                <i class="fa-solid fa-rotate-left"></i>
+            </button>
+            <button title="redo" id="redo" class="option-button">
+                <i class="fa-solid fa-rotate-right"></i>
+            </button>
+
+            <button title="Insert a Link" id="createLink" class="adv-option-button">
+                <i class="fa fa-link"></i>
+            </button>
+            <button title="Unlink" id="unlink" class="option-button">
+                <i class="fa fa-unlink"></i>
+            </button>
+
+            <button title="Align : Left" id="justifyLeft" class="option-button align">
+                <i class="fa-solid fa-align-left"></i>
+            </button>
+            <button title="Align : Center" id="justifyCenter" class="option-button align">
+                <i class="fa-solid fa-align-center"></i>
+            </button>
+            <button title="Align : Right" id="justifyRight" class="option-button align">
+                <i class="fa-solid fa-align-right"></i>
+            </button>
+            <button title="Paragraph" id="justifyFull" class="option-button align">
+                <i class="fa-solid fa-align-justify"></i>
+            </button>
+            <button title="Insert Space" id="indent" class="option-button spacing">
+                <i class="fa-solid fa-indent"></i>
+            </button>
+            <button title="Delete Space" id="outdent" class="option-button spacing">
+                <i class="fa-solid fa-outdent"></i>
+            </button>
+            <select title="Text Size" id="formatBlock" class="adv-option-button">
+                <option title="Header 1" value="H1">H1</option>
+                <option title="Header 2" value="H2">H2</option>
+                <option title="Header 3" value="H3">H3</option>
+                <option title="Header 4" value="H4">H4</option>
+                <option title="Header 5" value="H5">H5</option>
+                <option title="Header 6" value="H6">H6</option>
+            </select>
+            <select title="Font Style" id="fontName" class="adv-option-button"></select>
+            <select title="Font Size" id="fontSize" class="adv-option-button"></select>
+
+            <div class="input-wrapper">
+                <input title="Text Color" type="color" id="foreColor" class="adv-option-button">
+                <label title="Text Color" for="foreColor">Text Color</label>
+            </div>
+            <div class="input-wrapper">
+                <input title="Highlight Color" type="color" id="backColor" class="adv-option-button">
+                <label title="Highlight Color" for="backColor">Highlight Color</label>
+            </div>
+
+        </div>
+        <div id="text-input" title="Field for Text" contenteditable="true"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
